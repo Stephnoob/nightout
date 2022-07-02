@@ -183,3 +183,11 @@ p.text {
 	color: white;
 	text-shadow: 0px 0px 4px #000;
 }
+
+tr:nth-child(even) {
+ background: #BBB9BC;
+}
+
+tr:nth-child(odd) {
+ background-color: #DCDCDD;
+}
