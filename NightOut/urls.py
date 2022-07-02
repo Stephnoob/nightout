@@ -14,4 +14,4 @@ urlpatterns = [
     path('event_list', views.event_list, name='event_list'),
     path('event_list/voting/<pk>', views.voting, name='voting'),
 
-]
+]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
