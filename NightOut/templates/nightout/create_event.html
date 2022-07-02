@@ -1,0 +1,15 @@
+{% extends 'nightout/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+      <div class="container">
+            <div class="bg-secondary p-5 rounded" style="margin-top: 80px;">
+                  <h3>Create an Event</h3>
+                    <p>Please fill in members with the email addresses of people you would like to invite. Separate by comma.</p>
+                  <form method="POST" class="create_event">{% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-secondary">Create Event</button>
+                  </form>
+            </div>
+      </div>
+{% endblock %}
