@@ -1,0 +1,43 @@
+{% extends 'nightout/base.html' %}
+{% load static %}
+{% block content %}
+	<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'images/city.jpg' %}"></div>
+	<div class="info">
+		<h1> Let NightOut choose for you!</h1>
+		<p class="text"> NightOut is a social, dynamic web application that lets you coordinate social events seamlessly without making any of the difficult decisions, like where to eat or what to do.
+		Just send invites to your friends, have them vote, and we will do the rest!</p>
+		<p><a class="btn btn-secondary btn-lg" href={% url 'NightOut:create_event' %} role="button">Create Event &raquo;</a></p>
+		<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'images/club.jpg' %}"></div>
+        <div class="team">
+		    <h1>Meet the Team</h1>
+            <div class="profiles">
+				<div class="profile">
+					<img src="{% static 'images/andrew.jpg' %}" class="profile-img">
+					<h3 class="user-name">Andrew</h3>
+					<p>Andrew is a current year junior going to be a senior in the fall currently studying MIS.</p>
+				</div>
+				<div class="profile">
+					<img src="{% static 'images/carlee.jpg' %}" class="profile-img">
+					<h3 class="user-name">Carlee</h3>
+					<p>Carlee is a master's student in ITIN, and she works for the College of IS&T as the academic program coordinator.</p>
+				</div>
+				<div class="profile">
+					<img src="{% static 'images/steph.jpg' %}" class="profile-img">
+					<h3 class="user-name">Steph</h3>
+					<p>Steph is pursuing her bachelor's degree in MIS and works at NFM full time.</p>
+				</div>
+				<div class="profile">
+					<img src="{% static 'images/carlee.jpg' %}" class="profile-img">
+					<h3 class="user-name">Teja</h3>
+					<p>Carlee is a master's student in ITIN, and she works for the College of IS&T as the academic program coordinator.</p>
+				</div>
+				<div class="profile">
+					<img src="{% static 'images/terry.jpg' %}" class="profile-img">
+					<h3 class="user-name">Terry</h3>
+					<p>Terry is an undergrad student for MIS, and he works for NP Dodge as a IT Intern.</p>
+				</div>
+			</div>
+		</div>
+		<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'images/restaurant.jpg' %}"></div>
+    </div>
+{% endblock %}
